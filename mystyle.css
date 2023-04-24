@@ -4,20 +4,19 @@ mystyle.css
 body{
  font-size: 50px;
  margin-left: 10px;
-background-color: rgb(17, 0, 255);
+background-color: rgb(191, 191, 191);
 font-family: 'Wallpoet', cursive;
 }
 
-  .ball {
-   margin-top: 35px;
+  .ball {z-index: auto;
+
     border-radius: 50%;
-    position: fixed;  
-    width: 300px;
-    height: 300px;
-    top: 33%;
-    margin-left: 280px;
+    width:10px; height:10px ;
+  top:60%;
+    position: fixed;
+    left: 57%;
     animation-name: bounce;
-    animation-duration: 17s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-direction: alternate;
@@ -31,37 +30,20 @@ font-family: 'Wallpoet', cursive;
 
   @keyframes bounce {
     0% {
-        top: 152px; 
-
-	background-color: rgb(255, 213, 0);
+      filter: blur(.4px);
+      transform: scale(75);
+	background-color:blue;
 	}
-    
-	20% {
-        top: 43%;
-	background-color: orange;
-	}
-	
-	40% {
-        top: 152px; 
-	  background-color: yellow;
-    }
-  60% {
-    top: 43%;
-  background-color: rgb(255, 154, 81);
-  }
-  80%{
-    top: 152px; background-color: rgb(255, 221, 0);
 
+  50%{
+    filter: blur(1px);
+    transform: scale(50);
+	background-color:red;
   }
-  90% {
-    top: 152px; 
-    
-    background-color:rgb(255, 225, 0);
-}    
 100% {
-    top: 152px; 
-
-background-color: rgb(255, 196, 0);
+  filter: blur(1.5px);
+  transform: scale(10);
+background-color:yellow;
 }
 }
   
@@ -202,12 +184,33 @@ background-color: rgb(255, 196, 0);
 body{
     font-size: 50px;
     margin-left: 10px;
-   background-color: rgb(17, 0, 255);
+   background-color: rgb(175, 175, 175);
    font-family: Arial, Helvetica, sans-serif;
    }
 
    .Above{
     font-size: 400px;
-    margin-top: 25%;
-    margin-left: 500px;
+    margin-top: 13%;
+    margin-left: 380px;
    }
+ 
+  
+   .btn {
+    &:hover + .box {
+        transform: scale(1);
+        span {
+            transform: translateY(0);
+        }
+    }
+}
+
+.box {
+    transform: scale(0.1);
+    transition: transform 330ms ease-in-out;
+    overflow: hidden;
+    span {
+        display: inline-block;
+        transform: translateY(250%);
+        transition: transform 280ms ease-out 50ms; 
+    }
+}
