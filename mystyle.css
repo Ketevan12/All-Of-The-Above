@@ -217,42 +217,159 @@ justify-content: center;
   animation-direction: alternate;
 
 }
-
-.twoball {position: absolute;
-  z-index: 1;
-  margin-left: 200px;
-
+.fourball {  margin-left: 10px;
+  top:100px;
   margin-top: 40px;
     border-radius: 50%;
     width:10px; height:10px ;
   justify-content: center;
     width: 200px;
     height: 200px;
-    animation-name: bounces;
+    animation-name: bounces2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-direction: alternate;
   
   }
-  .threeball { position: absolute;
-    z-index: 2;
-top: 380px;
-margin-left: 200px;
+
+.twoball {position: absolute;
+  z-index: 1;
+ 
+  margin-top: 50px;
+    border-radius: 50%;
+    width:10px; height:10px ;
+  justify-content: center;
+    width: 200px;
+    height: 200px;
+    animation-name: bounces1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+  
+  }
+  .threeball { 
+    position: absolute;
+    z-index: 1;
+   margin-left: 200px;
+    margin-top: 50px;
       border-radius: 50%;
       width:10px; height:10px ;
     justify-content: center;
       width: 200px;
       height: 200px;
-      animation-name: bounces;
+      animation-name: bounces1;
       animation-duration: 10s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in;
       animation-direction: alternate;
     
     }
-
+    .fourball { 
+      position: absolute;
+      z-index: 1;
+     margin-left: 200px;
+      margin-top: 300px;
+        border-radius: 50%;
+        width:10px; height:10px ;
+      justify-content: center;
+        width: 200px;
+        height: 200px;
+        animation-name: bounces1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-direction: alternate;
+      
+      }
   
+      .fiveball { 
+        position: absolute;
+        z-index: 1;
+        margin-left: 500px;
+        margin-top: 50px;
+          border-radius: 50%;
+          width:10px; height:10px ;
+        justify-content: center;
+          width: 200px;
+          height: 200px;
+          animation-name: bounces2;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in;
+          animation-direction: alternate;
+        
+        }
+        .sixball { 
+          position: absolute;
+          z-index: 1;
+          margin-left: 760px;
+          margin-top: 50px;
+            border-radius: 50%;
+            width:10px; height:10px ;
+          justify-content: center;
+            width: 200px;
+            height: 200px;
+            animation-name: bounces2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+          
+          }
+          .sevenball { 
+            position: absolute;
+            z-index: 1;
+            margin-left: 1070px;
+            margin-top: 50px;
+              border-radius: 50%;
+              width:10px; height:10px ;
+            justify-content: center;
+              width: 200px;
+              height: 200px;
+              animation-name: bounces2;
+              animation-duration: 10s;
+              animation-iteration-count: infinite;
+              animation-timing-function: ease-in;
+              animation-direction: alternate;
+            
+            }
+            .sevenball { 
+              position: absolute;
+              z-index: 1;
+              margin-left: 1070px;
+              margin-top: 50px;
+                border-radius: 50%;
+                width:10px; height:10px ;
+              justify-content: center;
+                width: 200px;
+                height: 200px;
+                animation-name: bounces2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-direction: alternate;
+              
+              }
+              .eightball { 
+                position: absolute;
+                z-index: 1;
+                margin-left: 1370px;
+                margin-top: 50px;
+                  border-radius: 50%;
+                  width:10px; height:10px ;
+                justify-content: center;
+                  width: 200px;
+                  height: 200px;
+                  animation-name: bounces2;
+                  animation-duration: 10s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: ease-in;
+                  animation-direction: alternate;
+                
+                }
+        
 @keyframes bounces {
   0% {
     filter: blur(6px);
@@ -269,5 +386,59 @@ background-color:red;
 filter: blur(7px);
 transform: scale(.75);
 background-color:yellow;
+}
+}
+@keyframes bounces1 {
+  0% {
+    filter: blur(6px);
+    transform: scale(.9);
+background-color:red;
+}
+
+50%{
+  filter: blur(6px);
+  transform: scale(.8);
+background-color:yellow;
+}
+100% {
+filter: blur(7px);
+transform: scale(.75);
+background-color:blue;
+}
+}
+@keyframes bounces2 {
+  0% {
+    filter: blur(6px);
+    transform: scale(.9);
+background-color:blue;
+}
+
+50%{
+  filter: blur(6px);
+  transform: scale(.8);
+background-color:yellow;
+}
+100% {
+filter: blur(7px);
+transform: scale(.75);
+background-color:red;
+}
+}
+@keyframes bounces3 {
+  0% {
+    filter: blur(6px);
+    transform: scale(.9);
+background-color:yellow;
+}
+
+50%{
+  filter: blur(6px);
+  transform: scale(.8);
+background-color:blue;
+}
+100% {
+filter: blur(7px);
+transform: scale(.75);
+background-color:red;
 }
 }
