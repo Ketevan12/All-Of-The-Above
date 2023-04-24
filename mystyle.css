@@ -14,7 +14,7 @@ font-family: 'Wallpoet', cursive;
     width:10px; height:10px ;
   top:60%;
     position: fixed;
-    left: 57%;
+    left: 40%;
     animation-name: bounce;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -196,7 +196,9 @@ background-color:yellow;
     padding-top: 400px;
   }
   .ok{
+    margin-top: 60px;
     font-size: 100px;
+    margin-left: 10px;
     font-family: 'Times New Roman', serif;
   }
 .okk{
@@ -213,9 +215,10 @@ body{
    }
 
    .Above{
-    font-size: 400px;
-    margin-top: 13%;
-    margin-left: 380px;
+
+    font-size: 300px;
+    margin-top: 10%;
+    margin-left: 250px;
    }
  
   
@@ -270,16 +273,16 @@ justify-content: center;
   
   }
 
-.twoball {position: absolute;
-  z-index: 1;
- 
-  margin-top: 50px;
+.twoball { z-index: 1;
+  margin-left: 10px;
+  top:60px;
+  margin-top: 40px;
     border-radius: 50%;
     width:10px; height:10px ;
   justify-content: center;
     width: 200px;
     height: 200px;
-    animation-name: bounces1;
+    animation-name: bounces7;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -522,4 +525,22 @@ background-color:red;
   content: align;
   font-size: 100px;
   color: transparent;
+}
+@keyframes bounces7 {
+  0% {
+    filter: blur(6px);
+    transform: scale(.7);
+background-color:blue;
+}
+
+50%{
+  filter: blur(6px);
+  transform: scale(.6);
+background-color:red;
+}
+100% {
+filter: blur(7px);
+transform: scale(.75);
+background-color:yellow;
+}
 }
