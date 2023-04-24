@@ -31,7 +31,7 @@ font-family: 'Wallpoet', cursive;
   @keyframes bounce {
     0% {
       filter: blur(.4px);
-      transform: scale(75);
+      transform: scale(70);
 	background-color:blue;
 	}
 
@@ -282,7 +282,7 @@ justify-content: center;
   .threeball { 
     position: absolute;
     z-index: 1;
-   margin-left: 200px;
+   margin-left: 100px;
     margin-top: 50px;
       border-radius: 50%;
       width:10px; height:10px ;
