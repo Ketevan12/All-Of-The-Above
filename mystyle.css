@@ -409,14 +409,15 @@ justify-content: center;
         .oball{
           position: absolute;
           z-index: 1;
-          margin-left: 370px;
-          margin-top: 50px;
+          
+          margin-bottom: 100px;
+  
             border-radius: 50%;
-            width:10px; height:10px ;
+      
           justify-content: center;
             width: 200px;
             height: 200px;
-            animation-name: bounces3;
+            animation-name: bounces4;
             animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in;
@@ -492,6 +493,24 @@ background-color:blue;
 100% {
 filter: blur(7px);
 transform: scale(.75);
+background-color:red;
+}
+}
+@keyframes bounces4 {
+  0% {
+    filter: blur(6px);
+    transform: scale(.3);
+background-color:yellow;
+}
+
+50%{
+  filter: blur(6px);
+  transform: scale(.1);
+background-color:blue;
+}
+100% {
+filter: blur(7px);
+transform: scale(.7);
 background-color:red;
 }
 }
