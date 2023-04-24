@@ -190,13 +190,20 @@ background-color:yellow;
   }
 
   .u{
-    font-size: 30px;
+    font-size: 20px;
+    content: center;
+    text-align: center;
+    padding-top: 400px;
   }
   .ok{
     font-size: 100px;
     font-family: 'Times New Roman', serif;
   }
-
+.okk{
+  font-size: 50px;
+    font-family: 'Times New Roman', serif;
+    padding-top: 100px;
+}
 body{
   color: #e9e9e9;
     font-size: 50px;
@@ -399,7 +406,23 @@ justify-content: center;
                   animation-direction: alternate;
                 
                 }
-        
+        .oball{
+          position: absolute;
+          z-index: 1;
+          margin-left: 370px;
+          margin-top: 50px;
+            border-radius: 50%;
+            width:10px; height:10px ;
+          justify-content: center;
+            width: 200px;
+            height: 200px;
+            animation-name: bounces3;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+
+        }
 @keyframes bounces {
   0% {
     filter: blur(6px);
@@ -473,13 +496,11 @@ background-color:red;
 }
 }
 
-@media screen  (max-width: 500px){
-  .twoball {
-    display: none;
-  }
-}
-@media only screen and (max-width: 300px) {
-  .fourball {
-    display: none;
-  }
+
+.ra{
+  text-decoration: none;
+  text-align: center;
+  content: align;
+  font-size: 100px;
+  color: transparent;
 }
