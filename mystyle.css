@@ -4,7 +4,7 @@ mystyle.css
 body{
  font-size: 50px;
  margin-left: 10px;
-background-color: rgb(191, 191, 191);
+background-color: rgb(0, 0, 0);
 font-family: 'Wallpoet', cursive;
 }
 
@@ -52,6 +52,7 @@ background-color:yellow;
 
  
 #scroll-container {
+  
     -moz-transform: translateX(20%);
     -webkit-transform: translateX(105%);
     transform: translateX(-100%);
@@ -109,50 +110,35 @@ background-color:yellow;
     }
 
 }
-.container {
-    display: flex;
-    ...
-    gap: 10px;
-    gap: 10px 20px; /* row-gap column gap */
-    row-gap: 10px;
-    column-gap: 20px;
-  }
-  
-.one{margin-left: 10px;
-    font-size: 130%;
-}
-.two{
-    font-size: 90%;
-    text-align: right;
-}
-.link{
-    text-decoration: none;
-    color:black;
-}
 
-.flex-container {
+
+.flex-container { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    padding-left: 120px;
-    margin:10px;
-    overflow: fixed;
+    justify-content: center;
+    padding-left: 50px;
+    margin:70px;
+    overflow:hidden;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
   
   }
 
   
-  .flex-container > div {
-    text-align: center;
-    border-radius: 10px;
-    background-color: #f1f1f1;
-    width: 355px;
-    height: 155px;
+  .flex-container > div {   
+    top: 50%;
+    left: 50%;
+
+    background-color: #e9e9e9;
+    width: 250px;
+    height: 250px;
     margin: 8px;
     padding: 10px;
     font-size: 80px;  
-    background-color:rgb(255, 255, 0); 
-    border: 1pc;
     justify-content: center;
   }
   
@@ -182,9 +168,10 @@ background-color:yellow;
   }
 
 body{
+  color: #e9e9e9;
     font-size: 50px;
     margin-left: 10px;
-   background-color: rgb(175, 175, 175);
+   background-color: rgb(0, 0, 0);
    font-family: Arial, Helvetica, sans-serif;
    }
 
@@ -213,4 +200,74 @@ body{
         transform: translateY(250%);
         transition: transform 280ms ease-out 50ms; 
     }
+}
+
+.oneball {  margin-left: 10px;
+top:100px;
+margin-top: 40px;
+  border-radius: 50%;
+  width:10px; height:10px ;
+justify-content: center;
+  width: 200px;
+  height: 200px;
+  animation-name: bounces;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+
+}
+
+.twoball {position: absolute;
+  z-index: 1;
+  margin-left: 200px;
+
+  margin-top: 40px;
+    border-radius: 50%;
+    width:10px; height:10px ;
+  justify-content: center;
+    width: 200px;
+    height: 200px;
+    animation-name: bounces;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+  
+  }
+  .threeball { position: absolute;
+    z-index: 2;
+top: 380px;
+margin-left: 200px;
+      border-radius: 50%;
+      width:10px; height:10px ;
+    justify-content: center;
+      width: 200px;
+      height: 200px;
+      animation-name: bounces;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-direction: alternate;
+    
+    }
+
+  
+@keyframes bounces {
+  0% {
+    filter: blur(6px);
+    transform: scale(.9);
+background-color:blue;
+}
+
+50%{
+  filter: blur(6px);
+  transform: scale(.8);
+background-color:red;
+}
+100% {
+filter: blur(7px);
+transform: scale(.75);
+background-color:yellow;
+}
 }
