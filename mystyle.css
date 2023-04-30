@@ -224,6 +224,7 @@ background-color:yellow;
   font-size: 70px;
     font-family: 'Times New Roman', serif;
     padding-top: 100px;
+    margin-left: 7%;
 }
 .k{
   margin-top: 140px;
@@ -558,9 +559,9 @@ background-color:yellow;
 }
 .k{
   font-size:150px;
-  margin-left: 40px;
+  margin-left: 10%;
     font-family:  Helvetica, sans-serif;
-    padding-top: 100px;
+    padding-top: 55%;
 }
 
 @keyframes bouncess {
