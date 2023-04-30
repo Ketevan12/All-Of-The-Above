@@ -12,8 +12,8 @@ font-family: 'Wallpoet', cursive;
 
     border-radius: 50%;
     width:10px; height:10px ;
-    margin-top: 27%;
-    margin-left: 44%;
+    margin-top: 78%;
+    margin-left: 54%;
     position: fixed;
  
     animation-name: bounce;
@@ -223,7 +223,7 @@ background-color:yellow;
 .ik{
   font-size: 70px;
     font-family: 'Times New Roman', serif;
-    padding-top: 100px;
+    padding-top: 10%;
     margin-left: 7%;
 }
 .k{
@@ -559,7 +559,7 @@ background-color:yellow;
 }
 .k{
   font-size:150px;
-  margin-left: 10%;
+  margin-left: 20%;
     font-family:  Helvetica, sans-serif;
     padding-top: 55%;
 }
