@@ -13,7 +13,7 @@ font-family: 'Wallpoet', cursive;
     border-radius: 50%;
     width:10px; height:10px ;
     margin-top: 78%;
-    margin-left: 50%;
+    margin-left: 45%;
     position: fixed;
  
     animation-name: bounce;
@@ -306,7 +306,7 @@ justify-content: center;
   .threeball { 
     position:absolute;
   z-index:1;
-  margin-left: 270px;
+  margin-left: 260px;
   top:110px;
   margin-top: 10px;
     border-radius: 50%;
@@ -323,7 +323,7 @@ justify-content: center;
     .fourball { 
       position:absolute;
       z-index:1;
-      margin-left: 570px;
+      margin-left: 560px;
       top:110px;
       margin-top: 10px;
         border-radius: 50%;
