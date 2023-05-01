@@ -306,7 +306,7 @@ justify-content: center;
   .threeball { 
     position:absolute;
   z-index:1;
-  margin-left: 290px;
+  margin-left: 270px;
   top:110px;
   margin-top: 10px;
     border-radius: 50%;
@@ -323,7 +323,7 @@ justify-content: center;
     .fourball { 
       position:absolute;
       z-index:1;
-      margin-left: 590px;
+      margin-left: 570px;
       top:110px;
       margin-top: 10px;
         border-radius: 50%;
